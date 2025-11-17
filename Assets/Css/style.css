@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #f6f6f6;
+    --secondary-color: black;
+    --background-color: #131A22;
+    --text-color: #ffffff;
+    --button-color: #FFD814;
+    --heading-color: black;
+    --carret-size: 13px;
+    --font-style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-style);
+}
+
+header nav {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+header nav .nav-logo {
+    padding: 10px;
+    border: 2px solid transparent;
+}
+header nav .nav-logo a{
+    text-decoration: none;
+    display: flex;
+    color: var(--primary-color);
+}
+header nav .nav-logo a span{
+    margin-left: -8px;
+    font-size: 16px;
+}
+header nav .nav-address {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    cursor: pointer;
+    line-height: 15px;
+    border: 2px solid transparent;
+}
+
+header nav .nav-address i{
+    font-size: 22px;
+    margin-bottom: 1px;
+}
+header nav .nav-address span{
+    font-size: 12px;
+}
+header nav .nav-menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header nav .nav-menu select {
+    outline: none;
+    color: black;
+    text-overflow: hidden;
+    font-size: 14px;
+    flex: 0 1 auto;
+    cursor: pointer;
+    width: 65px;
+    padding: 11px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px ;
+    
+}
+header nav .nav-menu input[type="text"] {
+    min-width: 150px;
+    width: 350px;
+    padding: 12px;
+    font-size: 12px;
+}
+header nav .nav-menu button {
+    padding: 12px;
+    background-color: var(--button-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px ;
+}
+header nav .nav-menu button i{
+    font-size: 16px;
+}
+header nav .nav-language {
+    display: flex;
+    align-items: center;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    padding-right: 5px;
+    cursor: pointer;
+}
+header nav .nav-language p{
+    padding-left: 6px;
+}
+header nav .nav-logo:hover{
+    border: 2px solid white;
+}
+header nav .nav-address:hover{
+    border: 2px solid white;
+}
+header nav .nav-menu select:focus{
+    border: 2px solid #ffa200;
+}
+header nav .nav-language:hover{
+    border: 2px solid white;
+}
+header nav .nav-accounts{
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+}
+header nav .nav-accounts:hover{
+    border: 2px solid white;
+}
+header 
