@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 :root {
     --primary-color: #f6f6f6;
     --secondary-color: black;
@@ -24,22 +31,25 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 
 header nav .nav-logo {
     padding: 10px;
     border: 2px solid transparent;
 }
-header nav .nav-logo a{
+
+header nav .nav-logo a {
     text-decoration: none;
     display: flex;
     color: var(--primary-color);
 }
-header nav .nav-logo a span{
+
+header nav .nav-logo a span {
     margin-left: -8px;
     font-size: 16px;
 }
+
 header nav .nav-address {
     padding: 10px;
     display: flex;
@@ -50,37 +60,62 @@ header nav .nav-address {
     border: 2px solid transparent;
 }
 
-header nav .nav-address i{
+header nav .nav-address i {
     font-size: 22px;
     margin-bottom: 1px;
 }
-header nav .nav-address span{
+
+header nav .nav-address span {
     font-size: 12px;
 }
-header nav .nav-menu{
+
+header nav .nav-menu {
     display: flex;
     align-items: center;
     position: relative;
 }
+
 header nav .nav-menu select {
     outline: none;
     color: black;
-    text-overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 14px;
     flex: 0 1 auto;
     cursor: pointer;
     width: 65px;
     padding: 11px;
     border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px ;
-    
+    border-bottom-left-radius: 3px;
+
 }
+
 header nav .nav-menu input[type="text"] {
-    min-width: 150px;
-    width: 350px;
+    flex: 1 1 auto;
+    min-width: 200px;
+    box-sizing: border-box;
     padding: 12px;
     font-size: 12px;
 }
+
+
+@media (max-width: 800px) {
+    header nav {
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    header nav .nav-menu {
+        flex: 1 1 100%;
+        order: 1;                  /* chaaho to beech ya niche le aa sakte ho */
+    }
+
+    header nav .nav-menu input[type="text"] {
+        min-width: 0;
+    }
+}
+
 header nav .nav-menu button {
     padding: 12px;
     background-color: var(--button-color);
@@ -90,15 +125,17 @@ header nav .nav-menu button {
     text-align: center;
     border: none;
     border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px ;
+    border-bottom-right-radius: 3px;
 }
-header nav .nav-menu button i{
+
+header nav .nav-menu button i {
     font-size: 16px;
 }
+
 header nav .nav-language {
     display: flex;
     align-items: center;
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
@@ -106,28 +143,36 @@ header nav .nav-language {
     padding-right: 5px;
     cursor: pointer;
 }
-header nav .nav-language p{
+
+header nav .nav-language p {
     padding-left: 6px;
 }
-header nav .nav-logo:hover{
+
+header nav .nav-logo:hover {
     border: 2px solid white;
 }
-header nav .nav-address:hover{
+
+header nav .nav-address:hover {
     border: 2px solid white;
 }
-header nav .nav-menu select:focus{
+
+header nav .nav-menu select:focus {
     border: 2px solid #ffa200;
 }
-header nav .nav-language:hover{
+
+header nav .nav-language:hover {
     border: 2px solid white;
 }
-header nav .nav-accounts{
+
+header nav .nav-accounts {
     padding: 10px;
     cursor: pointer;
     border: 2px solid transparent;
     color: var(--primary-color);
 }
-header nav .nav-accounts:hover{
+
+header nav .nav-accounts:hover {
     border: 2px solid white;
 }
-header 
+
+header
